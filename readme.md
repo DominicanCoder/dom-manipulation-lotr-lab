@@ -37,7 +37,7 @@ Your solution should look a little something like this:
 ## Additional Resources
 
 - [DOM Reference](https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference)
-- [Events Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [Events Reference](s://developer.mozilla.org/en-US/docs/Web/Eventhttps)
 - [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
 
 ### Self Evaluation
