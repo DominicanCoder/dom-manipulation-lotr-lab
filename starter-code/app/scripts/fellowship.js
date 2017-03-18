@@ -3,9 +3,9 @@ console.log("Linked.");
 // Dramatis Personae
 var hobbits = [
   'Frodo Baggins',
-  'Samwise \'Sam\' Gamgee',
-  'Meriadoc \'Merry\' Brandybuck',
-  'Peregrin \'Pippin\' Took'
+  'Samwise', 'Sam', 'Gamgee',
+  'Meriadoc', 'Merry','Brandybuck',
+  'Peregrin','Pippin', 'Took'
 ];
 
 var buddies = [
@@ -21,24 +21,39 @@ var body = document.querySelector('body');
 
 
 // Part 1
+  function.makeMiddleEarth(); {
 
-
-function makeMiddleEarth() {
-  // create a section tag with an id of middle-earth
+  // Ceate a section tag with an id of middle-earth
+  section.querySelector("middle-earth");
   // inside, add each land as an article tag
+  var land = document.createElement('article');
+  for(var i = 0, len = lands.length; i < len; i++){
   // inside each article tag include an h1 with the name of the land
+  land.innerHTML = '<h1>' + lands[i] + '</h1>';
   // append middle-earth to your document body
+  middleEarth.appendChild(land);
+
 }
 
+
 makeMiddleEarth();
-
-
+var theShire = body.querySelectorAll('article')[0];
+var rivendell = body.querySelectorAll('article')[1];
+var mordor = body.querySelectorAll('article')[2];
 // Part 2
 
 function makeHobbits() {
   // display an unordered list of hobbits in the shire (which is the first article tag on the page)
+  var hobbitList = document.createElement('ul');
+  for(var i = 0, len = hobbits.length; i < len; i++){
   // give each hobbit a class of hobbit
+  var hobbit = document.createElement('li');
+    hobbit.className = 'hobbit';
+    hobbit.innerText = hobbits[i];
+    hobbitList.appendChild(hobbit);
+  }
 }
+  theShire.appendChild(hobbitList);
 
 
 // Part 3
