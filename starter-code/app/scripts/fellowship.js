@@ -23,7 +23,7 @@ var body = document.querySelector('body');
 // Part 1
 // This is the makeMiddleEarth function 
   
-function makeMiddleEarth() {
+        function makeMiddleEarth() {
       // create a section tag with an id of middle-earth
     var middleEarth = document.createElement('section');
     for(var i = 0, len = lands.length; i < len; i++){
@@ -43,18 +43,12 @@ function makeMiddleEarth() {
     var theShire = body.querySelectorAll('article')[0];
     var rivendell = body.querySelectorAll('article')[1];
     var mordor = body.querySelectorAll('article')[2];
-    function makeHobbits() {
-    // display an unordered list of hobbits in the shire (which is the first article tag on the page)
-    var hobbitList = document.createElement('ul');
-    for(var i = 0, len = hobbits.length; i < len; i++){
-    // give each hobbit a class of hobbit
-    var hobbit = document.createElement('li');
-    hobbit.className = 'hobbit';
-    hobbit.innerText = hobbits[i];
-    hobbitList.appendChild(hobbit);
-  }
-    theShire.appendChild(hobbitList);
-}
+    
+    
+     var theShire = document.createElement('hobbitList');
+
+
+
 
 // Part 2
 
@@ -64,12 +58,16 @@ function makeMiddleEarth() {
     for(var i = 0, len = hobbits.length; i < len; i++){
     // give each hobbit a class of hobbit
     var hobbit = document.createElement('li');
+    var hobbitList = ["hobbit"];
     hobbit.className = 'hobbit';
     hobbit.innerText = hobbits[i];
     hobbitList.appendChild(hobbit);
+
   }
 }
-  theShire.appendChild(hobbitList);
+  theShire = document.createElement('hobbitList');
+
+
 
 
 // Part 3
@@ -77,11 +75,15 @@ function makeMiddleEarth() {
 function keepItSecretKeepItSafe() {
 
   // create a div with an id of 'the-ring'
-  var middleEarth = document.createElement('the-ring');
+  var middleEarth = document.createElement("id");
   // give the div a class of 'magic-imbued-jewelry'
+  div.class = ("magic-imbued-jewelry");
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
+  document.addEventListener("clicks").nazgulScreech;
   // add the ring as a child of Frodo
+  document.appendChild("the-ring");
 }
+
 
 
 // Part 4

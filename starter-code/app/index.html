@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>The Fellowship of the Ring</title>
-  <link rel="stylesheet" href="./stylesheets/style.css">
+        <meta charset="utf-8">
+        <title>The Fellowship of the Ring</title>
+        <link rel="stylesheet" href="./stylesheets/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-  <div class="overlay">
-  </div>
-  <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio>
-  <script charset="utf-8">
-    function nazgulScreech(){
-      document.getElementById("nazgul-screech").play();
-    }
-  </script>
+// this is hte Shire.
+
+        <article>
+        <h1>The Shire</h1>
+        <ul class="hobits">
+           <li class="hobits">Frodo Baggins, Samwise, Sam </li>
+           <h4 oncanplay="nazgul_screech.mp">the ring</h4>
+           <li class="hobits">Gamgee, Meriadoc, Merry, Brandybuck</li>
+           <li class="hobits">Peregrin, Pippin, Took</li>
+        </u>
+        </article>
+
+        <article>
+
+// This is the  Rivendel 
+
+        <aside>
+        <h1>Rivendel</h1>
+        <ul class="Rivendel">
+          <li class="Rivendel">Gandalf the Grey, Legolas</li>
+          <li class="Rivendel">Gimli, Boromir</li>
+          <li class="Rivendel">Strider</li>
+        </ul>
+        </aside>
+
+        </article>
+
+        <article>
+        <h1>Mordor</h1>
+        </article>
+
+        <section id="middleEarth"></section>
+        <div class="overlay"></div>
+
+        <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio>
+
+
+    <script charset="utf-8">
+        function nazgulScreech(){
+          return play('nazgul_screech');
+        document.getElementById("nazgul-screech").play(); }
+    </script>
   <script src="./scripts/fellowship.js"></script>
+
 </body>
 </html>
